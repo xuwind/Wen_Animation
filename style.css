@@ -1,0 +1,33 @@
+html, body 
+{
+    height: 100%;
+}
+body  
+{
+    min-height: 100%;
+    background:#493f5b;
+}
+
+.ball{
+    animation-name: move-left-right;
+    animation-duration: 6s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move-left-right{
+    0% {transform: translateX(50px) rotate(0turn);}
+    20% {transform: translateX(-10px) rotate(-0.5turn);}
+    100% {transform: translateX(900px) rotate(4turn);}
+}
+footer
+{
+    position: fixed;
+    height: 20px;
+    bottom:0px;
+    left:0px;
+}
+
+
